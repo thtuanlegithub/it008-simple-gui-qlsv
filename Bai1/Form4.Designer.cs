@@ -240,6 +240,7 @@
             this.lb_edit_ko_thanhcong.Size = new System.Drawing.Size(202, 23);
             this.lb_edit_ko_thanhcong.TabIndex = 22;
             this.lb_edit_ko_thanhcong.Text = "Lưu không thành công";
+            this.lb_edit_ko_thanhcong.Visible = false;
             // 
             // edit_form
             // 

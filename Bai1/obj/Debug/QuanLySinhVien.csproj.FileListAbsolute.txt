@@ -1,0 +1,14 @@
+C:\Users\thanh\source\repos\IT008_BaiTH_GUI\Bai1\bin\Debug\Bai1.exe.config
+C:\Users\thanh\source\repos\IT008_BaiTH_GUI\Bai1\bin\Debug\Bai1.exe
+C:\Users\thanh\source\repos\IT008_BaiTH_GUI\Bai1\bin\Debug\Bai1.pdb
+C:\Users\thanh\source\repos\IT008_BaiTH_GUI\Bai1\obj\Debug\QuanLySinhVien.csproj.AssemblyReference.cache
+C:\Users\thanh\source\repos\IT008_BaiTH_GUI\Bai1\obj\Debug\QuanLySinhVien.csproj.SuggestedBindingRedirects.cache
+C:\Users\thanh\source\repos\IT008_BaiTH_GUI\Bai1\obj\Debug\Bai1.main_form.resources
+C:\Users\thanh\source\repos\IT008_BaiTH_GUI\Bai1\obj\Debug\Bai1.add_form.resources
+C:\Users\thanh\source\repos\IT008_BaiTH_GUI\Bai1\obj\Debug\Bai1.Properties.Resources.resources
+C:\Users\thanh\source\repos\IT008_BaiTH_GUI\Bai1\obj\Debug\QuanLySinhVien.csproj.GenerateResource.cache
+C:\Users\thanh\source\repos\IT008_BaiTH_GUI\Bai1\obj\Debug\QuanLySinhVien.csproj.CoreCompileInputs.cache
+C:\Users\thanh\source\repos\IT008_BaiTH_GUI\Bai1\obj\Debug\Bai1.exe
+C:\Users\thanh\source\repos\IT008_BaiTH_GUI\Bai1\obj\Debug\Bai1.pdb
+C:\Users\thanh\source\repos\IT008_BaiTH_GUI\Bai1\obj\Debug\Bai1.find_Form.resources
+C:\Users\thanh\source\repos\IT008_BaiTH_GUI\Bai1\obj\Debug\Bai1.edit_form.resources

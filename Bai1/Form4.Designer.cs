@@ -112,6 +112,7 @@
             this.tb_mssv_hien_thi.Location = new System.Drawing.Point(176, 58);
             this.tb_mssv_hien_thi.Multiline = true;
             this.tb_mssv_hien_thi.Name = "tb_mssv_hien_thi";
+            this.tb_mssv_hien_thi.ReadOnly = true;
             this.tb_mssv_hien_thi.Size = new System.Drawing.Size(272, 31);
             this.tb_mssv_hien_thi.TabIndex = 2;
             // 

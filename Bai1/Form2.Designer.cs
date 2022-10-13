@@ -42,6 +42,8 @@
             this.tb_dtb = new System.Windows.Forms.TextBox();
             this.bt_back_to_menu = new System.Windows.Forms.Button();
             this.lb_luu_thanh_cong = new System.Windows.Forms.Label();
+            this.lb_luu_khong_thanh_cong = new System.Windows.Forms.Label();
+            this.lb_nhap_khong_hop_le = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.picBox_main)).BeginInit();
             this.SuspendLayout();
             // 
@@ -63,6 +65,7 @@
             this.tb_mssv.Name = "tb_mssv";
             this.tb_mssv.Size = new System.Drawing.Size(242, 31);
             this.tb_mssv.TabIndex = 3;
+            this.tb_mssv.TextChanged += new System.EventHandler(this.tb_mssv_TextChanged);
             // 
             // label1
             // 
@@ -82,6 +85,7 @@
             this.tb_hoten.Name = "tb_hoten";
             this.tb_hoten.Size = new System.Drawing.Size(242, 31);
             this.tb_hoten.TabIndex = 4;
+            this.tb_hoten.TextChanged += new System.EventHandler(this.tb_hoten_TextChanged);
             // 
             // label2
             // 
@@ -97,7 +101,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Tahoma", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(151, 242);
+            this.label3.Location = new System.Drawing.Point(150, 234);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(90, 25);
             this.label3.TabIndex = 6;
@@ -111,6 +115,7 @@
             this.tb_malop.Name = "tb_malop";
             this.tb_malop.Size = new System.Drawing.Size(242, 31);
             this.tb_malop.TabIndex = 5;
+            this.tb_malop.TextChanged += new System.EventHandler(this.tb_malop_TextChanged);
             // 
             // bt_luu
             // 
@@ -151,6 +156,7 @@
             this.tb_dtb.Name = "tb_dtb";
             this.tb_dtb.Size = new System.Drawing.Size(242, 31);
             this.tb_dtb.TabIndex = 6;
+            this.tb_dtb.TextChanged += new System.EventHandler(this.tb_dtb_TextChanged);
             // 
             // bt_back_to_menu
             // 
@@ -168,18 +174,44 @@
             this.lb_luu_thanh_cong.AutoSize = true;
             this.lb_luu_thanh_cong.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_luu_thanh_cong.ForeColor = System.Drawing.Color.Green;
-            this.lb_luu_thanh_cong.Location = new System.Drawing.Point(295, 368);
+            this.lb_luu_thanh_cong.Location = new System.Drawing.Point(293, 368);
             this.lb_luu_thanh_cong.Name = "lb_luu_thanh_cong";
             this.lb_luu_thanh_cong.Size = new System.Drawing.Size(159, 23);
             this.lb_luu_thanh_cong.TabIndex = 10;
             this.lb_luu_thanh_cong.Text = "Lưu thành công";
             this.lb_luu_thanh_cong.Visible = false;
             // 
+            // lb_luu_khong_thanh_cong
+            // 
+            this.lb_luu_khong_thanh_cong.AutoSize = true;
+            this.lb_luu_khong_thanh_cong.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_luu_khong_thanh_cong.ForeColor = System.Drawing.Color.Red;
+            this.lb_luu_khong_thanh_cong.Location = new System.Drawing.Point(211, 362);
+            this.lb_luu_khong_thanh_cong.Name = "lb_luu_khong_thanh_cong";
+            this.lb_luu_khong_thanh_cong.Size = new System.Drawing.Size(348, 23);
+            this.lb_luu_khong_thanh_cong.TabIndex = 11;
+            this.lb_luu_khong_thanh_cong.Text = "Lưu không thành công, đã tồn tại MSSV";
+            this.lb_luu_khong_thanh_cong.Visible = false;
+            // 
+            // lb_nhap_khong_hop_le
+            // 
+            this.lb_nhap_khong_hop_le.AutoSize = true;
+            this.lb_nhap_khong_hop_le.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_nhap_khong_hop_le.ForeColor = System.Drawing.Color.Red;
+            this.lb_nhap_khong_hop_le.Location = new System.Drawing.Point(237, 362);
+            this.lb_nhap_khong_hop_le.Name = "lb_nhap_khong_hop_le";
+            this.lb_nhap_khong_hop_le.Size = new System.Drawing.Size(267, 23);
+            this.lb_nhap_khong_hop_le.TabIndex = 12;
+            this.lb_nhap_khong_hop_le.Text = "Vui lòng nhập thông tin hợp lệ";
+            this.lb_nhap_khong_hop_le.Visible = false;
+            // 
             // add_form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(751, 448);
+            this.Controls.Add(this.lb_nhap_khong_hop_le);
+            this.Controls.Add(this.lb_luu_khong_thanh_cong);
             this.Controls.Add(this.lb_luu_thanh_cong);
             this.Controls.Add(this.bt_back_to_menu);
             this.Controls.Add(this.bt_luu);
@@ -218,5 +250,7 @@
         private System.Windows.Forms.TextBox tb_dtb;
         private System.Windows.Forms.Button bt_back_to_menu;
         private System.Windows.Forms.Label lb_luu_thanh_cong;
+        private System.Windows.Forms.Label lb_luu_khong_thanh_cong;
+        private System.Windows.Forms.Label lb_nhap_khong_hop_le;
     }
 }
